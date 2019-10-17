@@ -4,6 +4,9 @@ if array.size == 1
   return array.join
 elsif array.size == 2
   array.join(" and ")
+elsif array.size == 3
+  array.join(", ")
+  array.insert(3, "and")
 end
 
 
