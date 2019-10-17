@@ -5,9 +5,10 @@ if array.size == 1
 elsif array.size == 2
   array.join(" and ")
 elsif array.size == 3
-  array.join(", ")
-  array.insert(2, "and")
+  new_array = []
 
+    new_array << "#{array[0]}, #{array[1]}, and #{array[2]}"
+    new_array
 end
 
 
